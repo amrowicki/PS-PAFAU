@@ -3,9 +3,9 @@ function Dismount-VHD {
     param (
         [Parameter(Mandatory)]
         [System.IO.DirectoryInfo]
-        $MountPath
+        $MountPoint
     )
 
-    Dismount-WindowsImage -Save -Path $MountPath | Out-Null
-    Remove-Item -Path $MountPath -Force | Out-Null
+    Dismount-WindowsImage -Save -Path $MountPoint | Out-Null
+    Remove-Item -Path $MountPoint -Force | Out-Null
 }
