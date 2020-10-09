@@ -1,0 +1,29 @@
+Zadanie 1
+Utwórz moduł zawierający:
+Zmienną:
+- FilePath – przechowująca lokalizację pliku txt (dowolną), hardcoded
+Funkcje:
+- Get-FileContent – pobierająca zawartość pliku ze zmiennej $FilePath
+- Set-FileContent – wpisująca do pliku ze zmiennej $FilePath aktualną datę i godzinę
+- Get-FilePath – zwracającą wartość ze zmiennej FilePath
+
+Zadanie 2
+Utwórz moduł importujący moduł z zadania 1.
+Utwórz funkcję:
+Set-FilePath – ustawiającą wartość zmiennej $FilePath (dowolna inna lokalizacja pliku), hardcoded
+Zmodyfikuj moduł z Zadania 1 tak, aby eksponował zmienną $FilePath.
+Sprawdź, czy funkcja Set-FilePath modyfikuje zmienną $FilePath. Jeśli nie, to w jakim scope należy modyfikować tą zmienną?
+
+Zadanie 3
+Utwórz kopię modułu z Zadania 2 i utwórz:
+Aliasy:
+- GFP do funkcji Get-FilePath
+- SFP do funkcji Set-FilePath
+Funkcje:
+- Write-FileContent – drukującą na ekran zawartość pliku. Funkcja powinna korzystać z funkcji Get-FileContent z zadania 1
+- Funkcję Set-FileContent - wpisująca do pliku ze zmiennej $FilePath aktualny dzień roku
+Sprawdź którą funkcję Set-FileContent możesz wywołać.
+
+Wyeksponuj z modułu:
+- Wszystkie aliasy
+- Funkcje: Set-FileContent, Write-FileContent, Get-FilePath, Set-FilePath (bez Get-FileContent)
