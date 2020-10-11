@@ -1,0 +1,2 @@
+Zadanie 1
+Przepisz moduły z poprzednich zadań (Zadania1/Zadanie3 oraz Zadania1/Zadanie1) tak, aby używały Module Manifest.

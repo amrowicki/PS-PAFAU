@@ -1,0 +1,14 @@
+Zadanie 1:
+Utwórz moduł do zarządzania drinkami z karty.
+Funkcje:
+Get-Drink – Wyświetla informacje o drinku: Nazwę, składniki, cenę w PLN, USD, EUR i GBP. Funkcja publiczna (wyeksponowana/wyeksportowana)
+Get-DrinkData – Pobiera informacje o drinku: Nazwę, składniki, cenę w PLN. Funkcja prywatna
+Get-DrinkIngredients - Wyświetla informacje o składnikach drinku. Używa Get-DrinkData. Funkcja publiczna.
+Get-DrinkPrice - Wyświetla informacje o cenie drinku w zależności od podanej waluty. Używa Get-DrinkData oraz Convert-Currency. Funkcja prywatna.
+Set-DrinkPrice – Ustawia cenę drinka w PLN. Funkcja publiczna
+Set-DrinkIngredients – Ustawia składniki drinka. Funkcja publiczna
+Get-CurrencyPrice - Pobiera kurs waluty. Funkcja publiczna
+Set-CurrencyPrice – Ustawia kurs waluty. Funkcja publiczna
+Convert-Currency – Konwertuje cenę z pln na wybraną walutę. Używa Get-CurrencyPrice. Funkcja prywatna.
+
+Utwórz pomoc, pamiętaj o odpowiednich atrybutach i ich argumentach.
