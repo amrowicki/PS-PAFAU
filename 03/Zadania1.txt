@@ -1,0 +1,14 @@
+Zadanie 1
+Utwórz funkcję Get-ComputersWithPatch która:
+1.	Przyjmować będzie listę hotfixów.
+2.	Będzie pobierać listę wszystkich komputerów w domenie
+3.	Sprawdzi każdy komputer w domenie na obecność podanych poprawek
+4.	Wyświetli nazwy komputerów z poprawką oraz datą jej instalacji
+5.	Jednocześnie będzie się łączyć tylko do dwóch komputerów
+Dla ułatwienia przyjmij, że skrypt wykonywany jest na kontrolerze domeny.
+
+Zadanie 2
+Zbadaj która metoda pobierania całego event loga system z komputera zdalnego jest wydajniejsza:
+1.	Używając cmdleta z parametrem computername
+2.	Używając invoke-command
+Dlaczego tak jest?

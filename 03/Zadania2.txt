@@ -1,0 +1,9 @@
+Zadanie 1
+Utwórz PSSession z DC1 do SRV1. Podłącz się do tej samej PSSession z IIS1.
+
+Zadanie 2
+Za pomocą Invoke-Command uruchom polecenie get-hotfix na SRV1 w rozłączonym PSSession. Pobierz wynik polecenia z innego serwera.
+
+Zadanie 3
+Napisz funkcję, która będzie kopiować wybrany plik lokalny na wszystkie komputery w domenie za pomocą PSSession.
+Funkcja powinna także przyjmować parametr ścieżki katalogu docelowego. Jeśli ten katalog nie istnieje, to należy go utworzyć.
