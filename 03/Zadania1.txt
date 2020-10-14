@@ -1,5 +1,5 @@
 Zadanie 1
-Utwórz funkcję Get-ComputersWithPatch która:
+Utwórz funkcję Get-ComputersWithHotFix która:
 1.	Przyjmować będzie listę hotfixów.
 2.	Będzie pobierać listę wszystkich komputerów w domenie
 3.	Sprawdzi każdy komputer w domenie na obecność podanych poprawek

@@ -1,0 +1,9 @@
+Zadanie 1
+Utwórz skrpyt z GUI za pomocą którego można:
+1. Wylistować wszystkie procesy z systemu zdalnego
+2. Wylistować wszystkie usługi z systemu zdalnego
+3. Listować lokalnych użytkowników z systemu zdalnego
+4. Listować lokalne grupy z systemu zdalnego
+5. Tworzyć użytkowników lokalnych w systemie zdalnym
+6. Zrestartować system zdalny
+7. Przekopiować plik z dysku lokalnego do wskazanego miejsca na dysku systemu zdalnego
