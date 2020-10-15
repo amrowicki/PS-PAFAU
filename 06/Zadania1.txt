@@ -1,0 +1,11 @@
+Utwórz moduł z interfejsem graficznym, który zdalnie na DC1:
+a.	Pozwala wylistować status usługi spooler oraz wuauserv, oraz je wyłączyć, włączyć i zrestartować.
+b.	Pozwala zrestartować serwer.
+c.	Pozwala utworzyć nowego użytkownika, ale można tylko podać nazwę konta, samaccountname i hasło.
+d.	Dodawać użytkowników tylko do grupy domenowej Allowed RODC Password Replication Group 
+Powyższe od strony DC1 powinno być realizowane za pomocą JEA. Dla ułatwienia przyjmij, że konto, które ma dostęp do tego endpointu to AD_mgmt (utwórz takie konto w domenie).
+
+Spróbuj realizować powyższe w kolejności:
+1.	Kofiguracja endpointu JEA + utworzenie konta domenowego AD_mgmt.
+2.	Przygotuj moduł i utwórz wszystkie funkcje, które będą realizować połączenie do kontrolera domeny do zdefiniowanego endpoint’a.
+3.	Przygotuj GUI, które będzie wykorzystywało utworzone wcześniej funkcje.
