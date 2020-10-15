@@ -1,0 +1,1 @@
+New-ModuleManifest -Path C:\ps\ps.psd1

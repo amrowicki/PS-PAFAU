@@ -210,3 +210,6 @@ function Convert-Currency
 }
 
 Get-DrinkIngredients -DrinkName Cosmopolitan
+
+# Set-DrinkIngredients -DrinkName Cosmopolitan -Ingredients Water
+# Set-DrinkPrice -DrinkName Cosmopolitan -Price 10
