@@ -1,0 +1,39 @@
+# Podstawowy formularz
+# [void] [System.Reflection.Assembly]::LoadWithPartialName('System.Drawing') # Tak staramy się nie robić
+# [void] [System.Reflection.Assembly]::LoadWithPartialName('System.Windows.Forms') # Tak staramy się nie robić
+
+Add-Type -AssemblyName System.Windows.Forms # Tak poprawnie ładujemy klasy
+$Form = New-Object system.Windows.Forms.Form 
+$Form.ShowDialog() # To Pokazuje nam okno. Można wywołać ponownie po zastosowaniu poniższych zmian.
+
+# https://docs.microsoft.com/en-us/dotnet/api/system.windows.forms.form
+
+# Drobna customizacja formularza
+$Form.Size = New-Object System.Drawing.Size(400,200) 
+# Mozna też tak ustawiać wilekość okna
+# $Form.Width = 400 
+# $Form.Height = 200 
+$form.MaximizeBox = $false 
+$Form.StartPosition = 'CenterScreen'
+$Form.Text = 'Moje GUI'
+
+#Label
+Add-Type -AssemblyName System.Drawing
+# https://docs.microsoft.com/en-us/dotnet/api/System.Drawing
+$Label = New-Object System.Windows.Forms.Label 
+$Label.Text = 'To jest skrypt z GUI' 
+$Label.AutoSize = $true 
+$Label.Location = New-Object System.Drawing.Size(75,50) 
+$Font = New-Object System.Drawing.Font('Arial',15,[System.Drawing.FontStyle]::Bold) 
+$form.Font = $Font 
+$Form.Controls.Add($Label)
+
+#przycisk
+$Okbutton = New-Object System.Windows.Forms.Button 
+$Okbutton.Location = New-Object System.Drawing.Size(150,100) 
+$Okbutton.Size = New-Object System.Drawing.Size(100,30) 
+$Okbutton.Text = 'OK' 
+$Form.Controls.Add($Okbutton)
+
+#jakaś akcja
+$Okbutton.Add_Click({Get-process | Out-GridView})
